@@ -68,4 +68,4 @@ api.add_resource(Todo, '/api/V1/todos/<todo_id>')
 
 if __name__ == '__main__':
     start_db()
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5001, debug=True)

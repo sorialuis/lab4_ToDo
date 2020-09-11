@@ -1,6 +1,6 @@
 import sqlite3
 
-DB_PATH = './todo_restfull.db'
+DB_PATH = 'db/todo_restfull.db'
 NOTSTARTED = 'Not Started'
 INPROGRESS = 'In Progress'
 COMPLETED = 'Completed'

@@ -3,9 +3,12 @@ from helper_restful import (add_to_list, delete_item,
                             get_item, get_all_items,start_db)
 from flask import Flask
 from flask_restful import reqparse, abort, Api, Resource
+from flask_cors import CORS
 
 app = Flask(__name__)
 api = Api(app)
+cors = CORS(app, resources={r"*": {"origins": "*"}})
+
 
 #Parser
 parser = reqparse.RequestParser()

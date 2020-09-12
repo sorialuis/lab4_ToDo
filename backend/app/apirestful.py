@@ -47,8 +47,9 @@ class Todo(Resource):
         args = parser.parse_args()           
         status =  args.get('status')
         if status and update_status(todo_id, status):
-            item = get_item(todo_id)
-            return item
+            # item = get_item(todo_id)
+            # return item
+            return get_all_items()
         return {'Fail':'No status Parse. Please, use one of {}'.format(STATUS_LIST)}
 
 # TodoList
